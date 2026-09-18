@@ -318,21 +318,37 @@
                     <p>Déjanos tus datos para coordinar una sesión informativa y un recorrido por nuestro plantel.</p>
                 </div>
                 <div class="contacto-wrapper">
-                    <form onsubmit="event.preventDefault(); alert('¡Mensaje enviado con éxito!');">
-                        <div class="form-group">
-                            <label for="name">Nombre del Tutor</label>
-                            <input type="text" id="name" required placeholder="Ej. Tu Nombre">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" id="email" required placeholder="ejemplo@correo.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensaje / Grado de Interés</label>
-                            <textarea id="message" rows="4" placeholder="Cuéntanos más sobre tu pequeño..."></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%;">Enviar Información</button>
-                    </form>
+                    
+<form action="https://formsubmit.co/octavio.cordoba79@gmail.com" method="POST">
+
+    <input type="hidden" name="_subject" value="Nuevo contacto - Kinder Trebolín">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+    <div class="form-group">
+        <label for="name">Nombre del Tutor</label>
+        <input type="text" id="name" name="name"
+               required placeholder="Ej. Tu Nombre">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email"
+               required placeholder="ejemplo@correo.com">
+    </div>
+
+    <div class="form-group">
+        <label for="message">Mensaje / Grado de Interés</label>
+        <textarea id="message" name="message"
+                  rows="4"
+                  placeholder="Cuéntanos más sobre tu pequeño..."></textarea>
+    </div>
+
+    <button type="submit" class="btn" style="width: 100%;">
+        Enviar Información
+    </button>
+
+</form>
                     <div>
                         <h3 style="margin-bottom: 20px; color: var(--verde-oscuro);">Ubicación y Contacto</h3>
                         <p style="margin-bottom: 15px;">📍 Calle Tulipan MZ 17 LT 24,Col. San Miguel Tehuisco,Alcaldía Tlalpan,
